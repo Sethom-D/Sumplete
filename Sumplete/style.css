@@ -1,0 +1,91 @@
+body {
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: rgb(20, 16, 16);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    color :rgb(216, 216, 216)
+}
+
+#gameContainer {
+    display: grid;
+    margin-top: 25px;
+    margin-left: 80px;
+    justify-content: center;
+}
+
+.boutons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font: bold 25px 'Arial';
+    color:rgb(94, 27, 0);
+    background-color: rgb(255, 115, 0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#victoryMessage {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color:rgb(0, 94, 16);
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.cell:hover {
+    cursor: pointer;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid rgb(122, 122, 122);
+    box-sizing: border-box;
+    outline: 2px solid rgb(122, 122, 122);
+    background-color: rgb(20, 16, 16);
+    color: rgb(216, 216, 216)
+}
+
+.cell.selected {
+    background-color: rgb(133, 0, 0);
+}
+
+.rowsum {
+    background: none;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: rgb(105, 105, 105)
+}
+
+.colsum {
+    background: none;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: rgb(105, 105, 105)
+}
+
+.correct {
+    color: rgb(216, 216, 216);
+    font-weight: bold;
+}
